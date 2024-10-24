@@ -1,0 +1,100 @@
+.box1{
+    background-color: #f2f2f2;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transition-duration: 1s;
+    transition-property: width, background-color, transform translate;
+   
+}
+.box1:hover{
+    width: 220px;
+    height: 250px;
+    background-color: #911010;
+    transform: rotate(180deg);
+}
+
+
+.box2{
+    border: 2px solid rgb(181, 38, 38);
+    width: 600px;
+    height: 200px;
+}
+.inner-box{
+    width: 200px;
+    height: 200px;
+    background-color: #911010;
+    border-radius: 100PX;
+    animation-name: row-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+.inner-box:hover{
+   transition-property: transform;
+}
+@keyframes row-animation{
+    0%{
+      transform:translate(200px);
+
+        }
+        25%{
+        transform:translate(400px);
+        }
+        50%{
+         transform: translate(200px);
+        }
+        100%{
+        transform: translate(10px);
+        }}
+        .boxes{
+            background-color: #f2f2f2;
+            width: 170px;
+            height: 170px;
+            border-radius: 130px;
+         
+           border-radius: 150px;
+          
+            }
+        
+        .box3{
+            width: 230px;
+            height: 230px;
+            border-radius: 130px;
+            border: 30px solid rgb(178, 174, 174);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-color:  rgb(181, 38, 38);
+            animation-name: box-box;
+            animation-duration: 2s;
+            animation-iteration-count: infinite
+        }
+        .row{
+            border: 20px solid rgb(41, 5, 5);
+           
+           
+        }
+        
+        .boxes:hover{
+           
+
+            }
+        
+
+            @keyframes box-box{
+                0%{
+                    transform:rotate(10deg);
+                    width: 30px;
+                }
+                25%{
+                    transform: rotate(60deg) ;
+                }
+                50%{
+                    transform: rotate(180deg) ;
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
+
+            }
